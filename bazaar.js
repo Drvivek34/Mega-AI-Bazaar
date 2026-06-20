@@ -33,6 +33,11 @@ async function main(){
 
   const cat = await getJSON(`../catalog/${ID}.json`);
   ITEMS = (cat && cat.items) || [];
+  // Merge live community averages from Supabase, if configured.
+  if(window.SB && ITEMS.length){
+    const agg = await window.SB.aggregates(ID);
+    ITEMS.forEach(i=>{ const a=agg[i.url]; if(a){ i.rating=a.avg; i.count=a.count; } });
+  }
   document.getElementById("controls").innerHTML = `
     <input id="q" type="search" placeholder="🔍 Search ${ITEMS.length||B.categories.length} ${ITEMS.length?'items':'categories'} in ${esc(B.name)}…" autocomplete="off"/>
     <span id="count" class="count"></span>`;
@@ -105,14 +110,16 @@ function starSpans(url,avg){
 function wireStars(scope){
   scope.querySelectorAll(".stars").forEach(s=>{
     s.querySelectorAll(".star").forEach(star=>{
-      star.addEventListener("click",e=>{
+      star.addEventListener("click",async e=>{
         e.preventDefault();
         const n=Number(star.dataset.n), url=s.dataset.url;
         localStorage.setItem("rate:"+ID+":"+url,String(n));
+        if(window.SB){
+          try{ await window.SB.rate(ID,url,n); const a=await window.SB.one(ID,url); if(a) s.dataset.avg=a.avg;
+               toast("Thanks — rating saved!"); }
+          catch(_){ toast("Couldn't save rating right now."); }
+        } else { toast("Saved on this device. (Shared ratings activate once Supabase is configured.)"); }
         s.innerHTML=starSpans(url,Number(s.dataset.avg)); wireStars(s.parentElement);
-        if(RATINGS_ENDPOINT){ fetch(RATINGS_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},
-          body:JSON.stringify({bazaar:ID,item:url,rating:n})}).catch(()=>{}); }
-        else { toast("Saved on this device. (Shared ratings need a backend.)"); }
       });
     });
   });
@@ -133,9 +140,15 @@ function toggleSubmit(){
     <label>Author / credit<input id="sAuth"/></label>
     <label>Note<textarea id="sNote" rows="2"></textarea></label>
     <button class="btn btn-primary" id="sGo">Open pre-filled GitHub issue →</button>`;
-  document.getElementById("sGo").addEventListener("click",()=>{
+  document.getElementById("sGo").addEventListener("click",async()=>{
     const name=val("sName"),cat=val("sCat"),src=val("sSrc"),auth=val("sAuth"),note=val("sNote");
     if(!name||!src){ toast("Name and Source URL are required."); return; }
+    if(window.SB){
+      try{
+        const r=await window.SB.submit({bazaar:ID,name,category:cat,source:src,author:auth,note});
+        if(r.ok){ toast("Submitted — thank you! 🎉"); document.getElementById("submitPanel").classList.add("hidden"); return; }
+      }catch(_){ /* fall through to GitHub */ }
+    }
     const title=`[${B.name}] ${name}`;
     const body=`**Name:** ${name}\n**Category:** ${cat}\n**Source:** ${src}\n**Author:** ${auth}\n**Note:** ${note}\n\n_Submitted via the Mega AI Bazaar website._`;
     const url=`${repoUrl(B)}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=submission`;

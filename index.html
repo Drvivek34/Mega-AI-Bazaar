@@ -34,11 +34,15 @@
       <h1>One bazaar to find them all.</h1>
       <p class="sub">An all-in-one home for AI <strong>Skills</strong>, <strong>MCP servers</strong>, <strong>Custom Instructions</strong>, <strong>Slash Commands</strong>, <strong>Free APIs</strong>, and <strong>Jailbreak research</strong> — each in its own open repository.</p>
       <div class="search-wrap">
-        <input id="search" type="search" placeholder="🔍 Search bazaars and categories…" autocomplete="off" />
+        <select id="scope" aria-label="Search scope">
+          <option value="all">All bazaars</option>
+        </select>
+        <input id="search" type="search" placeholder="🔍 Search…" autocomplete="off" />
       </div>
       <p class="counts" id="counts"></p>
     </section>
 
+    <section id="results" class="results hidden" aria-label="Search results"></section>
     <section id="bazaars" class="grid" aria-label="Bazaars"></section>
 
     <section id="submit" class="panel">

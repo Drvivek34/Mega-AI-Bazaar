@@ -59,11 +59,16 @@ function renderAccordions(app){
   ITEMS.forEach(i=>(groups[i.category]=groups[i.category]||[]).push(i));
   const cats=Object.keys(groups).sort();
   document.getElementById("count").textContent=`${ITEMS.length} items · ${cats.length} categories`;
-  app.innerHTML = cats.map(c=>`
+  const top=ITEMS.slice().sort((a,b)=>(b.rating||0)-(a.rating||0)).slice(0,15);
+  app.innerHTML = `<h3 class="sec">⭐ Top rated <small>— click a star to rate</small></h3>
+    <ul class="rows">${top.map(rowLI).join("")}</ul>
+    <h3 class="sec">Browse by category <small>— click to reveal</small></h3>` +
+    cats.map(c=>`
     <details class="acc" data-cat="${esc(c)}">
       <summary>${esc(c)} <span class="acc-n">${groups[c].length}</span></summary>
       <div class="acc-body"></div>
     </details>`).join("");
+  wireStars(app); // wire the Top-rated list immediately
   // lazy-render each category's rows on first open
   app.querySelectorAll("details.acc").forEach(d=>{
     d.addEventListener("toggle",()=>{
@@ -91,7 +96,12 @@ function renderCategories(app,q){
       <span>${c.replace(/-/g,' ')}</span><span class="arrow">Open on GitHub →</span></a>`).join("");
 }
 
-function rowsHTML(items){ return `<ul class="rows">${items.slice().sort((a,b)=>(b.rating||0)-(a.rating||0)).map(rowLI).join("")}</ul>`; }
+function rowsHTML(items){
+  const sorted=items.slice().sort((a,b)=>(b.rating||0)-(a.rating||0));
+  const shown=sorted.slice(0,300);
+  return `<ul class="rows">${shown.map(rowLI).join("")}</ul>`+
+    (sorted.length>300?`<p class="notice">Showing 300 of ${sorted.length} — use the search box above to find a specific one.</p>`:"");
+}
 function rowLI(i){
   return `<li class="row">
     <a class="r-title" href="${i.url}" target="_blank" rel="noopener">${esc(i.title)}</a>

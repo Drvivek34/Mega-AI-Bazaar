@@ -20,8 +20,9 @@ This is the landing site (GitHub Pages) that ties together every bazaar:
 ## What's here
 - `index.html`, `style.css`, `app.js` — the static site (cards + client-side search).
 - `bazaars.json` — the source of truth the site renders. **To add/rename a bazaar, edit this file.**
-- `gemini/` — automation prompts: a master auto-update prompt + one continuous-optimization goal per repo (for a scheduled Gemini agent).
 - `CNAME.example` — rename to `CNAME` to attach a custom subdomain (e.g. `mega.medh.ai.cloud`).
+
+_(Automation schedules + agent goals are kept in a separate **private** ops repo, not here.)_
 
 ## Enabling the site
 GitHub Pages → Deploy from branch → `main` / root. (`.nojekyll` is included so all files are served as-is.)

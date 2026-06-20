@@ -8,7 +8,7 @@
       "name": "Skill Bazaar",
       "repo": "Skill-Bazaar",
       "tagline": "AI Agent Skills (SKILL.md), organized by category.",
-      "description": "An all-in-one open collection of portable Agent Skills from across GitHub and the web.",
+      "description": "An all-in-one open collection of portable Agent Skills (SKILL.md) from across GitHub and the web. Browse, filter by category, and rate top developer capabilities.",
       "categories": ["coding-development","data-analysis","writing-content","research","productivity","devops-infrastructure","security","design-creative","business-finance","marketing-seo","education","automation","ai-ml","testing-qa","documentation","web-scraping-data","media-audio-video","science-math","legal-compliance","healthcare-medical","communication","misc"],
       "accent": "#10BECA"
     },
@@ -18,7 +18,7 @@
       "name": "MCP Bazaar",
       "repo": "MCP-Bazaar",
       "tagline": "Model Context Protocol servers & tools.",
-      "description": "A categorized catalog of MCP servers connecting LLMs to databases, APIs, browsers and more.",
+      "description": "A curated catalog of Model Context Protocol (MCP) servers and tools connecting LLMs to databases, file storage, web search APIs, and browsers. Rate and submit.",
       "categories": ["databases","filesystems-storage","version-control","cloud-services","search-web","browser-automation","communication","productivity","dev-tools","ai-ml","knowledge-memory","monitoring-observability","finance","security","media","maps-location","social-media","ecommerce","iot-hardware","misc"],
       "accent": "#6C5CE7"
     },
@@ -28,7 +28,7 @@
       "name": "Custom Instruction Bazaar",
       "repo": "Custom-Instruction-Bazaar",
       "tagline": "System prompts & custom instructions for LLMs.",
-      "description": "Curated persona/behavior packs for ChatGPT, Claude Projects, Gemini Gems and more.",
+      "description": "Curated system prompts and custom instruction packs for ChatGPT, Claude Projects, Gemini Gems, and other LLMs. Discover and rate optimized developer persona rules.",
       "categories": ["coding-development","writing-editing","business-strategy","marketing-sales","research-analysis","education-tutoring","creative-roleplay","productivity","customer-support","data-analytics","legal","medical-health","finance-investing","language-learning","personal-development","hr-recruiting","gaming","misc"],
       "accent": "#D62828"
     },
@@ -38,7 +38,7 @@
       "name": "Slash Command Bazaar",
       "repo": "Slash-Command-Bazaar",
       "tagline": "Slash commands for Claude Code & other AI CLIs.",
-      "description": "Reusable /command definitions for AI coding tools, by category.",
+      "description": "A curated repository of reusable slash command (/command) definitions for Claude Code, Aider, and other AI developer command-line interfaces. Discover and rate commands.",
       "categories": ["git-version-control","code-review","testing","refactoring","documentation","debugging","devops-cicd","security","database","frontend","backend","project-management","ai-prompts","file-operations","productivity","misc"],
       "accent": "#F39C12"
     },
@@ -48,7 +48,7 @@
       "name": "Free API Bazaar",
       "repo": "Free-API-Bazaar",
       "tagline": "Free LLM & AI APIs, with their real limits.",
-      "description": "A living directory of free / free-tier LLM, image, audio, video and embedding APIs (formerly 'awesome free LLM API resources').",
+      "description": "A living directory of free-tier LLM inference, image, audio, video, and embedding APIs with real limits and OpenAI compatibility verified. Discover free endpoints.",
       "categories": ["free-llm-inference","free-trials-credits","openai-compatible","image-generation","audio-tts-stt","embeddings","vision-multimodal","video-generation","code-models","gateways-routers","local-self-hosted","rate-limit-notes","misc"],
       "accent": "#2ECC71"
     },
@@ -58,7 +58,7 @@
       "name": "Jailbreak Bazaar",
       "repo": "Jailbreak-Bazaar",
       "tagline": "LLM red-team techniques + defenses (authorized testing only).",
-      "description": "A defensive security-research catalog of jailbreak/prompt-injection techniques paired with mitigations.",
+      "description": "A defensive security-research catalog of LLM jailbreak, prompt injection, and red-team techniques paired with detailed mitigations to harden model safety.",
       "categories": ["prompt-injection","instruction-override","roleplay-personas","encoding-obfuscation","context-manipulation","multi-turn-attacks","payload-splitting","system-prompt-extraction","refusal-suppression","data-exfiltration","tool-agent-abuse","model-specific","defenses-mitigations","benchmarks-datasets","tooling","misc"],
       "accent": "#34495E"
     },
@@ -68,7 +68,7 @@
       "name": "Loop Bazaar",
       "repo": "Loop-Bazaar",
       "tagline": "5,000+ repeatable AI agent loops, sorted by rating.",
-      "description": "Curated AI agent workflows, repeatable prompts, and stop conditions — with community ratings and authors.",
+      "description": "Discover 5,000+ repeatable AI agent loops, design patterns, and stop-condition prompts. Search, filter by category, and rate workflows for Claude Code and Aider.",
       "categories": ["engineering","evaluation","operations","content","design"],
       "accent": "#E84393"
     },
@@ -78,7 +78,7 @@
       "name": "Automation Bazaar",
       "repo": "Automation-Bazaar",
       "tagline": "n8n, Make.com, Zapier, scripts & cron automations.",
-      "description": "Curated automation workflows across platforms, with ratings, authors, and source links.",
+      "description": "Curated catalog of automation workflows across n8n, Make.com, Zapier, and custom cron scripts. Discover, rate, and submit ready-to-use templates for workflow automation.",
       "categories": ["n8n","make-com","zapier","scripts","schedules-cron","other-platforms"],
       "accent": "#00B894"
     },
@@ -88,7 +88,7 @@
       "name": "Prompt Bazaar",
       "repo": "Prompt-Bazaar",
       "tagline": "5,000+ developer prompts for coding agents (Claude Code, Aider, Codex, Open Code, and more).",
-      "description": "Curated repository of developer-focused prompts, rules files, and system instructions for AI coding assistants.",
+      "description": "Curated library of over 5,000 developer prompts, Aider rules files, Claude Code instructions, and Codex templates. Rate and submit system instructions.",
       "categories": ["claude-code","aider","open-code","codex","misc"],
       "accent": "#00CEC9"
     }

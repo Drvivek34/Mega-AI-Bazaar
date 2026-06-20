@@ -27,8 +27,9 @@ function card(b) {
     <div class="tag">${b.tagline}</div>
     <div class="chips">${chips}</div>
     <div class="actions">
-      <a class="btn btn-primary" href="${repoUrl(b)}" target="_blank" rel="noopener">Browse repo</a>
-      <a class="btn btn-ghost" href="${submitUrl(b)}" target="_blank" rel="noopener">➕ Submit</a>
+      <a class="btn btn-primary" href="b/${b.id}.html">Browse all items</a>
+      <a class="btn btn-ghost" href="${repoUrl(b)}" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-ghost" href="${submitUrl(b)}" target="_blank" rel="noopener">➕</a>
     </div>
   </article>`;
 }

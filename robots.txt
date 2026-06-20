@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://drvivek34.github.io/Mega-AI-Bazaar/sitemap.xml

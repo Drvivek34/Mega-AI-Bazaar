@@ -14,6 +14,8 @@ This is the landing site (GitHub Pages) that ties together every bazaar:
 | ⚡ Slash Command Bazaar | Slash commands for AI CLIs | [Slash-Command-Bazaar](https://github.com/Drvivek34/Slash-Command-Bazaar) |
 | 🆓 Free API Bazaar | Free LLM & AI APIs | [Free-API-Bazaar](https://github.com/Drvivek34/Free-API-Bazaar) |
 | 🛡️ Jailbreak Bazaar | LLM red-team research + defenses | [Jailbreak-Bazaar](https://github.com/Drvivek34/Jailbreak-Bazaar) |
+| ∞ Loop Bazaar | 5,000+ repeatable AI agent loops | [Loop-Bazaar](https://github.com/Drvivek34/Loop-Bazaar) |
+| ⚙️ Automation Bazaar | n8n / Make / Zapier / cron automations | [Automation-Bazaar](https://github.com/Drvivek34/Automation-Bazaar) |
 
 ## What's here
 - `index.html`, `style.css`, `app.js` — the static site (cards + client-side search).

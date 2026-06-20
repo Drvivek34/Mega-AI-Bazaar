@@ -61,6 +61,26 @@
       "description": "A defensive security-research catalog of jailbreak/prompt-injection techniques paired with mitigations.",
       "categories": ["prompt-injection","instruction-override","roleplay-personas","encoding-obfuscation","context-manipulation","multi-turn-attacks","payload-splitting","system-prompt-extraction","refusal-suppression","data-exfiltration","tool-agent-abuse","model-specific","defenses-mitigations","benchmarks-datasets","tooling","misc"],
       "accent": "#34495E"
+    },
+    {
+      "id": "loop",
+      "emoji": "∞",
+      "name": "Loop Bazaar",
+      "repo": "Loop-Bazaar",
+      "tagline": "5,000+ repeatable AI agent loops, sorted by rating.",
+      "description": "Curated AI agent workflows, repeatable prompts, and stop conditions — with community ratings and authors.",
+      "categories": ["engineering","evaluation","operations","content","design"],
+      "accent": "#E84393"
+    },
+    {
+      "id": "automation",
+      "emoji": "⚙️",
+      "name": "Automation Bazaar",
+      "repo": "Automation-Bazaar",
+      "tagline": "n8n, Make.com, Zapier, scripts & cron automations.",
+      "description": "Curated automation workflows across platforms, with ratings, authors, and source links.",
+      "categories": ["n8n","make-com","zapier","scripts","schedules-cron","other-platforms"],
+      "accent": "#00B894"
     }
   ]
 }

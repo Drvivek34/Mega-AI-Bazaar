@@ -81,6 +81,16 @@
       "description": "Curated automation workflows across platforms, with ratings, authors, and source links.",
       "categories": ["n8n","make-com","zapier","scripts","schedules-cron","other-platforms"],
       "accent": "#00B894"
+    },
+    {
+      "id": "prompt",
+      "emoji": "🤖",
+      "name": "Prompt Bazaar",
+      "repo": "Prompt-Bazaar",
+      "tagline": "5,000+ developer prompts for coding agents (Claude Code, Aider, Codex, Open Code, and more).",
+      "description": "Curated repository of developer-focused prompts, rules files, and system instructions for AI coding assistants.",
+      "categories": ["claude-code","aider","open-code","codex","misc"],
+      "accent": "#00CEC9"
     }
   ]
 }

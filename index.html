@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mega AI Bazaar — the front door to all the bazaars</title>
+  <meta name="description" content="Mega AI Bazaar: one place for AI Skills, MCP servers, Custom Instructions, Slash Commands, Free APIs, and Jailbreak research. Browse, search, and submit." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛍️</text></svg>" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">🛍️ <span>Mega AI Bazaar</span></a>
+    <nav class="nav" id="nav">
+      <a href="#bazaars">Bazaars</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#submit">➕ Submit</a>
+      <a class="nav-gh" href="https://github.com/Drvivek34" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>One bazaar to find them all.</h1>
+      <p class="sub">An all-in-one home for AI <strong>Skills</strong>, <strong>MCP servers</strong>, <strong>Custom Instructions</strong>, <strong>Slash Commands</strong>, <strong>Free APIs</strong>, and <strong>Jailbreak research</strong> — each in its own open repository.</p>
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="🔍 Search bazaars and categories…" autocomplete="off" />
+      </div>
+      <p class="counts" id="counts"></p>
+    </section>
+
+    <section id="bazaars" class="grid" aria-label="Bazaars"></section>
+
+    <section id="submit" class="panel">
+      <h2>➕ Submit to a bazaar</h2>
+      <p>Each bazaar has its own submission form. Pick one and fill it in — a maintainer or an automated agent adds it. Attribution is always required.</p>
+      <div class="submit-grid" id="submit-grid"></div>
+    </section>
+
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p>The Mega AI Bazaar is a community catalog of AI building blocks. Everything is open and organized into category folders, with the top picks featured at the front of each repo. Contributions are welcome via each bazaar's submission form.</p>
+      <p class="muted">Hosted on GitHub Pages. A short subdomain (e.g. <code>mega.medh.ai.cloud</code>) can be attached later — see <code>CNAME.example</code>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>🛍️ Mega AI Bazaar</span>
+    <span>·</span>
+    <a href="https://github.com/Drvivek34" target="_blank" rel="noopener">@Drvivek34</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "owner": "Drvivek34",
+  "website": "https://drvivek34.github.io/Mega-AI-Bazaar/",
+  "bazaars": [
+    {
+      "id": "skill",
+      "emoji": "🛒",
+      "name": "Skill Bazaar",
+      "repo": "Skill-Bazaar",
+      "tagline": "AI Agent Skills (SKILL.md), organized by category.",
+      "description": "An all-in-one open collection of portable Agent Skills from across GitHub and the web.",
+      "categories": ["coding-development","data-analysis","writing-content","research","productivity","devops-infrastructure","security","design-creative","business-finance","marketing-seo","education","automation","ai-ml","testing-qa","documentation","web-scraping-data","media-audio-video","science-math","legal-compliance","healthcare-medical","communication","misc"],
+      "accent": "#10BECA"
+    },
+    {
+      "id": "mcp",
+      "emoji": "🔌",
+      "name": "MCP Bazaar",
+      "repo": "MCP-Bazaar",
+      "tagline": "Model Context Protocol servers & tools.",
+      "description": "A categorized catalog of MCP servers connecting LLMs to databases, APIs, browsers and more.",
+      "categories": ["databases","filesystems-storage","version-control","cloud-services","search-web","browser-automation","communication","productivity","dev-tools","ai-ml","knowledge-memory","monitoring-observability","finance","security","media","maps-location","social-media","ecommerce","iot-hardware","misc"],
+      "accent": "#6C5CE7"
+    },
+    {
+      "id": "custom-instruction",
+      "emoji": "📝",
+      "name": "Custom Instruction Bazaar",
+      "repo": "Custom-Instruction-Bazaar",
+      "tagline": "System prompts & custom instructions for LLMs.",
+      "description": "Curated persona/behavior packs for ChatGPT, Claude Projects, Gemini Gems and more.",
+      "categories": ["coding-development","writing-editing","business-strategy","marketing-sales","research-analysis","education-tutoring","creative-roleplay","productivity","customer-support","data-analytics","legal","medical-health","finance-investing","language-learning","personal-development","hr-recruiting","gaming","misc"],
+      "accent": "#D62828"
+    },
+    {
+      "id": "slash-command",
+      "emoji": "⚡",
+      "name": "Slash Command Bazaar",
+      "repo": "Slash-Command-Bazaar",
+      "tagline": "Slash commands for Claude Code & other AI CLIs.",
+      "description": "Reusable /command definitions for AI coding tools, by category.",
+      "categories": ["git-version-control","code-review","testing","refactoring","documentation","debugging","devops-cicd","security","database","frontend","backend","project-management","ai-prompts","file-operations","productivity","misc"],
+      "accent": "#F39C12"
+    },
+    {
+      "id": "free-api",
+      "emoji": "🆓",
+      "name": "Free API Bazaar",
+      "repo": "Free-API-Bazaar",
+      "tagline": "Free LLM & AI APIs, with their real limits.",
+      "description": "A living directory of free / free-tier LLM, image, audio, video and embedding APIs (formerly 'awesome free LLM API resources').",
+      "categories": ["free-llm-inference","free-trials-credits","openai-compatible","image-generation","audio-tts-stt","embeddings","vision-multimodal","video-generation","code-models","gateways-routers","local-self-hosted","rate-limit-notes","misc"],
+      "accent": "#2ECC71"
+    },
+    {
+      "id": "jailbreak",
+      "emoji": "🛡️",
+      "name": "Jailbreak Bazaar",
+      "repo": "Jailbreak-Bazaar",
+      "tagline": "LLM red-team techniques + defenses (authorized testing only).",
+      "description": "A defensive security-research catalog of jailbreak/prompt-injection techniques paired with mitigations.",
+      "categories": ["prompt-injection","instruction-override","roleplay-personas","encoding-obfuscation","context-manipulation","multi-turn-attacks","payload-splitting","system-prompt-extraction","refusal-suppression","data-exfiltration","tool-agent-abuse","model-specific","defenses-mitigations","benchmarks-datasets","tooling","misc"],
+      "accent": "#34495E"
+    }
+  ]
+}
